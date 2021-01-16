@@ -1,0 +1,100 @@
+:root {
+    --base-font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+
+    --blueberries-color: #07183d;
+    --sky-color: #86d8f8;
+    --black-color: #000000;
+    --lblack-color: #F0F8FF;
+    --yellow-light-color: #e7b23e;
+    --black-color: #000000;
+    --avatar-border-color: white;
+    --shadow-color: #00000029;
+    --tasklist-back-color: #4ea8d1;
+    --input-shadow-color: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--base-font-family);
+}
+
+body {
+    min-height: 100vh;
+    background: #a8dfff;
+    padding: 0 calc(100vw / 24);
+    
+}
+
+#main-header {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    text-decoration: underline;
+    align-items: center;
+    font-size: clamp(5rem, 2vw, 2rem);
+    padding: 10vh 8;
+    color: var(--black-color);
+    
+}
+
+#main-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 4vh;
+    margin-bottom: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    row-gap: 4vh;
+    column-gap: calc(8% / 3);
+    
+}
+
+.orderarr {
+    width: 30%;
+    box-sizing: border-box;
+   /* border-radius: 1vw;*/
+    padding: 1vw 1.2vw;
+    /*box-shadow: 2px 2px 4px var(--sky-color);*/
+    background-color: var(--sky-color);
+    outline: 2px solid #000; /* Чёрная рамка */
+}
+
+.orderarr-name {
+    font-size: clamp(0.75rem, 2vw, 2rem);
+    font-weight: 600;
+    color: var(--black-color);
+    margin-bottom: 1vw;
+    
+}
+
+.orderarr:last-child > .orderarr-name {
+    font-weight: 400;
+    
+}
+
+.orderarr:last-child > .orderarr-name:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#add-orderarr-input {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-radius: 0.7vw;
+    box-shadow: 0 0 4px var(--input-shadow-color);
+    padding: 0.6vw;
+    font-size: clamp(0.7rem, 1.5vw, 1.5rem);
+    color: var(--input-shadow-color);
+    opacity: 0.7;
+    outline: none;
+}
+
+#add-orderarr-input:focus,
+#add-orderarr-input:hover {
+    opacity: 1;
+}
+  
