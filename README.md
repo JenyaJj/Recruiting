@@ -3,4 +3,4 @@ npm install
 npm run start
 
 Далее из папки server:
-node index.js# Restaurant
+node index.js# Recruiting
